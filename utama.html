@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UJIAN | RAGA</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+      .custom-card {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .col img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: Dark;
+        color: #fff;
+        text-decoration: none;
+        transition: opacity 0.4s;
+      }
+
+      .back-to-top:hover {
+        background-color: white;
+        color: #000;
+      }
+      footer.bg-dark {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .text-white {
+        color: #fff;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      body {
+  background-image: url("p2.png");
+  background-size: cover;
+  background-position: auto;
+  background-repeat: no-repeat;
+}
+#buy:hover{
+background-color: #000;
+color: #fff;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+      <a class="navbar-brand" href="index.html" style="font-size: 30px; color: #fff;"><b>MyProduct</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#About">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Product">Product</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+      <div class="card mt-5 border-black" style="width: auto ; text-align: center; background-color: #fff; color: #000;">
+        <div class="card-body mt-5 mb-4">
+          <h3 class="card-title">Welcome to Bakso Solo Level</h3>
+          <a href="#Product" class="btn btn-outline-dark">See Product</a>
+        </div>
+      </div>
+
+<section id="About" >
+<div class="card mt-5  mx-auto border-black" style="width: 75rem; background: #fff;">
+  <div class="card-body">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card mt-2 mx-0" style="width: 31rem; background-color: #000;color: #fff;">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: left; color:#fff;">Gallery</h3><hr>
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Masak.jpg" class="d-block w-200" alt="..."style="width: 300px; height:300px">
+                      <h5>Proses Memasak</h5>
+                      <p>Gambar Di atas Merupakan Proses Pembuatan Makanan</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Menu.jpg" class="d-block w-200" alt="..." style="width: 300px; height:300px">
+                      <h5>Makanan</h5>
+                      <p>Gambar Di atas Merupakan Jenis Makanan Dari Product Kami</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Kemasan.jpg" class="d-block w-200" alt="..." style="width: 300px; height:300px";>
+                      <h5>Kemasan</h5>
+                      <p>Gambar Di atas Merupakan Kemasan yang Kami gunakan</p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card mt-2 mx-0" style="width: 37rem; height: 29.6rem;background-color: #000;color: #fff;">
+            <div class="card-body">
+                <h3 class="card-title" style="text-align: left;">About Us</h3><hr>
+            <div style="text-align: left;">
+                <p>Menyediakan makanan Berkuah dengan harga rata-rata 10rb. Banya varian jenis menu seperti Bakso Bom, Bakso, Bakso Beranak, DLL.</p><hr>
+                <p><b>Bakso, Hidangan bakso populer Indonesia, menawarkan sejumlah manfaat bagi kesehatan. Beberapa manfaatnya antara lain: </b> <br>
+                    1.Energi : Bakso mengandung karbohidrat dan lemak yang memberikan energi dan rasa kenyang, menjadikannya sumber energi berkelanjutan yang baik.<br>
+                    2.Meningkatkan Pertumbuhan : Protein dalam bakso mendukung pertumbuhan tubuh dan kinerja otot, serta dipercaya dapat mencegah anemia karena kandungan zat besinya yang tinggi.<br>
+                 </p><hr><b>
+                MyProduct Name : Bakso Solo Level<br>
+                Address : Jl.Kenanga Raya, Kota Medan<br>
+                No.Telp : 083190966263
+                E-mail  : muhammadraga240707@gmail.com</b>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+   </section>
+
+   <section id="Product";>
+    <div class="card mt-5 mx-auto mb-5 border-black" style="width:75rem ; text-align: center; background-color: #fff;">
+      <div class="card-body">
+        <h3 class="card-title" style="text-align: left;">Product</h3><hr>
+        <div class="row">
+          <div class="col m-3 mt-3">
+            <div class="card bg-black text-white" style="width: 15rem;">
+              <img src="Bakso1.jpg" class="card-img-top" alt="..." style="height:160px ;">
+              <div class="card-body">
+                <p class="card-text">Bakso</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto mt-3">
+            <div class="card bg-black text-white" style="width: 15rem;">
+              <img src="Bakso2.jpg" class="card-img-top" alt="..." style="height:160px ;">
+              <div class="card-body">
+                <p class="card-text">Bakso Mercon</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto mt-3">
+            <div class="card bg-black text-white" style="width: 15rem;">
+              <img src="Bakso3.jpg" class="card-img-top" alt="..." style="height:160px ;">
+                <div class="card-body">
+                 <p class="card-text">Bakso Bom</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto mt-3">
+            <div class="card bg-black text-white" style="width: 15rem;">
+                          <img src="Bakso4.jpg" class="card-img-top" alt="..." style="height:160px ;">
+                          <div class="card-body">
+                            <p class="card-text">Bakso Beranak</p>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        <div class="row">
+          <div class="col m-3 mt-4">
+            <div class="card bg-black text-white" style="width: 15rem;">
+                          <img src="Bakso5.jpg" class="card-img-top" alt="..." style="height:160px ;">
+                          <div class="card-body">
+                            <p class="card-text">Bakso Goreng</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col mx-auto mt-4">
+                        <div class="card bg-black text-white" style="width: 15rem;">
+                                      <img src="Bakso6.jpg" class="card-img-top" alt="..." style="height:160px ;">
+                                      <div class="card-body">
+                                        <p class="card-text">Bakso Bakar</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col mx-auto mt-4">
+                                    <div class="card bg-black text-white" style="width: 15rem;">
+                                                  <img src="Bakso7.jpg" class="card-img-top" alt="..." style="height:160px ;">
+                                                  <div class="card-body">
+                                                    <p class="card-text">Bakso Sambal</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col mx-auto mt-4">
+                                                <div class="card bg-black text-white" style="width: 15rem;">
+                                                              <img src="Bakso8.jpg" class="card-img-top" alt="..." style="height:160px ;">
+                                                              <div class="card-body">
+                                                                <p class="card-text">Bakso Mie Ayam</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>                                                          
+                                                        </div>
+<a href="https://wa.me/083190966263?text=Apakah%20barang%20masi%20ada?" class="btn btn-outline-dark mt-4" style=" width: 10rem;"><b>Buy now</b></a>
+      </div>
+    </div>
+   </section>
+   <a href="#" id="back-to-top" class="btn btn-dark back-to-top">Kembali ke Atas</a>
+
+   <footer class="bg-black text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Ikuti Kami</h4>
+          <!-- Perbaikan untuk ikon Font Awesome -->
+          
+          <a href="https://www.facebook.com">
+              <i class="fab fa-facebook icon"></i>
+          </a>
+          <a href="https://twitter.com/?lang=en-id">
+              <i class="fab fa-twitter icon"></i>
+          </a>
+          <a href="https://www.instagram.com/?hl=en">
+              <i class="fab fa-instagram icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+              <i class="fab fa-linkedin icon"></i>
+          </a>
+         
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+// Ketika tombol "Kembali ke Atas" ditekan
+$('#back-to-top').click(function(){
+// Scroll halaman ke puncak
+$('html, body').animate({scrollTop : 0},800);
+return false;
+});
+
+// Tampilkan atau sembunyikan tombol "Kembali ke Atas" saat menggulir ke bawah
+$(window).scroll(function(){
+if ($(this).scrollTop() > 200) {
+ $('.back-to-top').fadeIn();
+} else {
+ $('.back-to-top').fadeOut();
+}
+});
+});
+</script>
+      
+  </body>
+</html>

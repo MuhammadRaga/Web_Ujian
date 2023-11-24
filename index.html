@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+       .container {
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 5px solid #000000;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: dimgray;
+  color:black;
+}
+img{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.container{
+  background-color: #fff;
+}
+body {
+  background-color:#000000;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: #fff; background-color: #000000 ;">MyProduct Login</h1>
+      <img src="SJW.jpg" width="250px" height="200px">
+      <form>
+        <label for="username" style="color: #fff;background-color: #000000;">Username:</label>
+        <input type="text" id="username" name="username" >
+
+        <label for="password" style="color: #fff;background-color: #000000;">Password:</label>
+        <input type="password" id="password" name="password" >
+
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    <script>
+      const form = document.querySelector('form');
+const usernameInput = document.querySelector('#username');
+const passwordInput = document.querySelector('#password');
+
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); 
+  const usernameValue = usernameInput.value;
+  const passwordValue = passwordInput.value;
+
+  
+  if (usernameValue === '' || passwordValue === '') {
+   
+    alert('Username or password cannot be empty');
+  } 
+  else if(usernameValue !== "Admin" || passwordValue !== "1234"){
+    alert('Username or password wrong');
+  }
+  else {
+    window.location.href = "utama.html";
+  }
+});
+    </script>
+  </body>
+</html>
